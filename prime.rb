@@ -1,5 +1,4 @@
 n = ARGV[0].to_i
-
 if n == 0 || n == nil then
         p "自然数を入力してください\n"
         n = $stdin.gets.to_i

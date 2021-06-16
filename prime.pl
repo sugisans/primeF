@@ -1,5 +1,3 @@
-#!/usr/local/bin/perl
-
 $n = $ARGV[0];
 unless(defined($n)){
 	print "自然数を入力してください\n";

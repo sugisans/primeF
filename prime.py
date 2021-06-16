@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*
+
 import sys     
 n = sys.argv
-
 if len(n) < 2:
         print("自然数を入力してください")
         n = int(sys.stdin.readline())

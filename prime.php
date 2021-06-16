@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 $n = intval($_SERVER['argv'][1]);
 if($n <= 2){

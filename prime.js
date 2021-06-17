@@ -17,7 +17,7 @@ if (!process.argv[2]) {
 }
 if (n <= 2) {
     console.log("引数は2より大きい数値にしてください:");
-    process.exit(0);
+    process.exit(1);
 }
 
 prime(n);

@@ -1,7 +1,7 @@
 CC            = gcc
 DEST          = /usr/local/bin
-SOURCE        = math.c
-PROGRAM       = mathtest
+SOURCE        = prime.c
+PROGRAM       = primef
 
 $(PROGRAM):$(SOURCE)
 	$(CC) $(SOURCE) -o $(PROGRAM)

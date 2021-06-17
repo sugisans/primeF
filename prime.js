@@ -12,12 +12,12 @@ if (!process.argv[2]) {
     });
     process.stdin.on('keypress', function(key) {
         prime(n);
-        process.exit(1);
+        process.exit(0);
     });
 }
 if (n <= 2) {
     console.log("引数は2より大きい数値にしてください:");
-    process.exit(1);
+    process.exit(0);
 }
 
 prime(n);

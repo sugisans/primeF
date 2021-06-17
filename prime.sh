@@ -1,5 +1,5 @@
 n=${1};
-if [ $n = ""]; then
+if [ $n = "" ]; then
 	echo "自然数を入力してください";
 	while read line;
 	do

@@ -1,9 +1,8 @@
-#!/usr/bin/awk -f
 BEGIN{
-	print "素因数分解実行";
-
+	print "自然数を入力してください";
 }
 {
+	system("reset");
 	n = $0
 	if(n <= 2){
 		print "2より大きい数値を入力してください";
@@ -19,7 +18,7 @@ BEGIN{
 		}
 		if(n == i){
 			print i;
-			break;
+			exit;
 		}
 	}
 }

@@ -1,9 +1,18 @@
-if [ ${1} -le 2 ]; then 
+n=${1};
+if [ $n = ""]; then
+	echo "自然数を入力してください";
+	while read line;
+	do
+		n=$line;
+		break;
+	done
+fi
+
+if [ $n -le 2 ]; then 
 	echo "2より大きい数字を第一パラメーターに入力してください";
 	exit;
 fi
 
-n=${1};
 i=2;
 while [ $n -gt $i ];
 do

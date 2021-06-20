@@ -1,15 +1,15 @@
 import java.util.Scanner;
 class prime{
 	public static void main(String[] args){
-		int n;
+		long n;
 		try{
-			n = Integer.parseInt(args[0]);
+			n = Long.parseLong(args[0]);
 		}
 		catch(ArrayIndexOutOfBoundsException err){
 			System.out.println("自然数を入力してください");
 			Scanner scan = new Scanner(System.in);
 			String str = scan.nextLine();
-			n = Integer.parseInt(str);
+			n = Long.parseLong(str);
 		}
 		if(n <= 2){
 			System.out.println("引数は2より大きい自然数にしてください");

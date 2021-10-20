@@ -11,6 +11,11 @@ if [ -z $n ]; then
 	reset;
 fi
 
+if [ $n -le 2 ]; then
+	echo "2より大きい数字を第一パラメーターに入力してください";
+	exit;
+fi
+
 prime=`factor $n`;
 for i in $prime
 do	

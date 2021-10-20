@@ -1,11 +1,12 @@
 n=${1};
-if [ $n = "" ]; then
+if [ -z $n ]; then
 	echo "自然数を入力してください";
 	while read line;
 	do
 		n=$line;
 		break;
 	done
+	reset;
 fi
 
 if [ $n -le 2 ]; then 

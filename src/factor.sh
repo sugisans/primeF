@@ -1,2 +1,9 @@
 #!/bin/sh
-factor ${1}
+
+prime=`factor ${1}`
+for i in $prime
+do	
+	echo $i;
+done;
+
+

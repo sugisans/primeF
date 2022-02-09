@@ -1,7 +1,4 @@
 # primeF
-prime factorization
-
-execute examples
 
 $php prime.php 100
 

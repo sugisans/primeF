@@ -6,7 +6,6 @@ if [ -z $n ]; then
 		n=$line;
 		break;
 	done
-	reset;
 fi
 
 if [ $n -le 2 ]; then 

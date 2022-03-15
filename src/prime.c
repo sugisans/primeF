@@ -7,7 +7,6 @@ int main(int argc, char *argv[]){
 		scanf("%lu", &n);
 	}else{
 		n = (unsigned long) atoi(argv[1]);
-		printf("%lu\n", n);
 	}
 	if(n <= 2){
 		printf("2より大きい自然数を入力してください\n");

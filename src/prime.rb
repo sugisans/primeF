@@ -1,11 +1,11 @@
 n = ARGV[0].to_i
 if n == 0 || n == nil then
-        p "自然数を入力してください\n"
+        puts "自然数を入力してください\n"
         n = $stdin.gets.to_i
 end
 
 if n <= 2 then
-        p "2より大きい数値を入力してください\n"
+        puts "2より大きい数値を入力してください\n"
         exit
 end
 

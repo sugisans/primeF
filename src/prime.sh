@@ -8,6 +8,7 @@ if [ -z $n ]; then
 	done
 fi
 
+n=$((n + 0)); #int check
 if [ $n -le 2 ]; then 
 	echo "2より大きい数字を第一パラメーターに入力してください";
 	exit;

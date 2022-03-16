@@ -1,9 +1,10 @@
-n = ARGV[0].to_i
-if n == 0 || n == nil then
+n = ARGV[0]
+if n == nil then
         puts "自然数を入力してください\n"
-        n = $stdin.gets.to_i
+        n = $stdin.gets
 end
 
+n = n.to_i
 if n <= 2 then
         puts "2より大きい数値を入力してください\n"
         exit

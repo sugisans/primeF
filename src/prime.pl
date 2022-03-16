@@ -2,8 +2,10 @@ $n = $ARGV[0];
 unless(defined($n)){
 	print "自然数を入力してください\n";
 	$n = <STDIN>;
+	chomp($n);
 }	
-chomp($n);
+
+$n = int($n);
 if($n <= 2){
 	print "2より大きい数値を入力してください\n";
 	exit;

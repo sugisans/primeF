@@ -1,11 +1,12 @@
 <?php
-$n = $_SERVER['argv'][1];
-if(!isset($n) || empty($n)){
+$n;
+if(!isset($argv[1])){
 	printf("自然数を入力してください\n");
-	$n = fgets(STDIN);
+	$n = intVal(fgets(STDIN));
+}else{
+	$n = intVal($argv[1]);
 }
 
-$n = intVal($n);
 if($n <= 2){
 	printf("引数は2より大きい数値にしてください\n");
 	exit();

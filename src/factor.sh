@@ -11,6 +11,7 @@ if [ -z $n ]; then
 	reset;
 fi
 
+n=$(($n + 0));
 if [ $n -le 2 ]; then
 	echo "2より大きい数字を第一パラメーターに入力してください";
 	exit;
